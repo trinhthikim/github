@@ -7,8 +7,11 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="header.panel">
+        <!-- <referenceContainer name="header.panel">
             <block class="Magento\Framework\View\Element\Template" name="cpanel.header.notification" as="cpanel_header_notification" before="-" template="Magento_Theme::html/header/notification.phtml" ></block>
+        </referenceContainer> -->
+        <referenceContainer name="header.panel">
+            <block class="Lesson\HelloMagento\Block\Index" name="cpanel.header.notification" as="cpanel_header_notification" before="-" template="Lesson_HelloMagento::hello.phtml" ></block>
         </referenceContainer>
         <referenceContainer name="header.panel">
             <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
